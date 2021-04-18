@@ -54,7 +54,6 @@
     }
   },
   "environment": {
-    "terminals": [{"name": "host01", "target": "node01"}],
     "uilayout": "editor-terminal"
   },
   "backend": {
