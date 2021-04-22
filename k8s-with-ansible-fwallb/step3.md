@@ -11,15 +11,17 @@ Below is a typical layout of a hosts file. Here we have two groups, both with no
     66.77.88.99
     44.66.22.33
 
-Let us set up a hosts file matching the K8s cluster.
+Let us set up a hosts file matching the K8s cluster. The cluster used in the tutorial has one node, a single master node.
 
-First, get the ip-address of the K8s cluster by running `kubectl cluster-info`{{execute}}. Then configure the hosts file with the following commands:
-* create the hosts file and add the group _master_  `echo "[master]" > hosts`{{execute}}.
-* add the cluster's ip-address to the _master_ group `echo "<ip-address of cluster>" >> hosts`. NOTE! change <ip-address of cluster> to the ip-address displayed when running `kubectl cluster-info`.
+First, get the ip-address of the K8s cluster by running `kubectl cluster-info`{{execute}}. Then configure the hosts file to include this ip-address. Create the hosts file and add the group _master_ by running `echo "[master]" > hosts`{{execute}}.
+
+The hosts file is now created and can be found beside the editor. Now add the cluster's ip-address to the _master_ group by opening the hosts file above and, add the ip-address for the cluster that you got by the `kubectl cluster-info` command.
+
+NOTE! If you can't find the file, you can edit it using `nano playbook.yml`{{execute}}, which will open the file, To close and save use `ctl-x`{{execute}} followed by `y`{{execute}} and `enter`{{execute}}.
 
 To verify that the file is configured correctly, run `cat hosts`{{execute}} to see the content of the file, which should be the following:
 
     [master]
-    172.17.0.96
+    the ip-address that you got
 
-Now ping the servers to verify connection to the cluster `ansible all -i hosts -m ping`{{execute}} - this should display SUCCESS!
+Now ping the server to verify connection to the cluster `ansible all -i hosts -m ping`{{execute}} - this should display SUCCESS!
