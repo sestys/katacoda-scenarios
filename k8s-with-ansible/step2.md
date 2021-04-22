@@ -6,4 +6,4 @@ It can be used to automate tasks on the K8s cluster.
 
 First, install Ansible with the following command `apt install ansible`{{execute}}
 
-Verify installation using `ansible -version`{{execute}}, which should display a version if Ansible is properly installed.
+Verify installation using `ansible --version`{{execute}}, which should display a version if Ansible is properly installed.
