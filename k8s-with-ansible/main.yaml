@@ -1,0 +1,30 @@
+- hosts: group1
+  tasks:
+    - name: openshift install
+      pip:
+        name: openshift
+        extra_args: --use-feature=2020-resolver
+    - name: create namespace
+      k8s_raw:
+        name: my-namespace
+        api_version: v1
+        kind: Namespace
+        state: present
+        
+WORKING!!!!
+---
+- hosts: all
+  become: yes
+  vars:
+    ansible_python_interpreter: '{{ ansible_playbook_python }}'
+  tasks:
+    - name: install openshift
+      pip:
+        name: openshift==0.4.3
+  
+    - name: create namespace
+      k8s_raw:
+        name: testansible
+        api_version: v1
+        kind: Namespace
+        state: present
