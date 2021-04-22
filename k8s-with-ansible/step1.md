@@ -1,7 +1,7 @@
-## Init
-* run `launch.sh`{{execute}} and wait till Kubernetes cluster is up and running.
-* check K8s nodes `kubectl get nodes`{{execute}}
-* install k8 module `ansible-galaxy install ansible.kubernetes-modules`{{execute}}
-* create host file: first `echo "group1" > hosts`{execute}, then `echo "172.17.0.26" >> hosts`
-* test connection `ansible all -i hosts -m ping`{{execute}}
-* create role: `ansible-galaxy init test-role --offline`{{execute}}
+## Initialize a Kubernetes (K8s) cluster
+
+A K8s cluster is included in the backend and needs to be initialized. Run `launch.sh`{{execute}} and wait till K8s cluster is up and running.
+
+Check the K8s nodes by running `kubectl get nodes`{{execute}}. This will list all nodes present in the cluster.
+
+Get information about the nodes with `kubectl cluster-info`{{execute}}. The ip-address of the nodes in the cluster will be shown.
