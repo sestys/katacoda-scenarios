@@ -2,6 +2,7 @@
 
 A K8s cluster is included in the backend and needs to be initialized. Run `launch.sh`{{execute}} and wait till K8s cluster is up and running.
 
-Check the K8s nodes by running `kubectl get nodes`{{execute}}. This will list all nodes present in the cluster.
+Kubectl is K8s command line tool and can be used to communicate with the cluster.
+  * List the nodes by running `kubectl get nodes`{{execute}}.
 
-Get information about the nodes with `kubectl cluster-info`{{execute}}. The ip-address of the nodes in the cluster will be shown.
+* Get information about the nodes with `kubectl cluster-info`{{execute}}. The ip-address of the nodes in the cluster will be shown.
