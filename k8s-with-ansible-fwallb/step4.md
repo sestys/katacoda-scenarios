@@ -1,6 +1,17 @@
 ## Into to Ansible playbooks
 
-A playbooks lists plays which is a task that Ansible interprets. The playbook below has one play, which is started by `tasks:`. It simply prints a message saying "Hello World" and installs numpy.
+A playbooks lists plays which is a tasks that Ansible interprets. The playbook below has one play, which is started by `tasks:`. It simply prints a message saying "Hello World" and installs numpy.
+
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Say hello
+    debug:
+      msg: 'Hello World'
+  - name: install numpy
+    pip:
+      name: numpy
 
 - __Hosts__ lets you state which group in the inventory that the play should apply to. In this case it is set to `all`, to affect all groups.
 - __Become__ lets you become another user, and `Become: yes` activates privilege escalation.
