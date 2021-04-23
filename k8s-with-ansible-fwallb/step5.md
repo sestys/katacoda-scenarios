@@ -12,9 +12,10 @@ Create a playbook.yml file by running `touch playbook.yml`{{execute}}. Open the 
   - name: Say hello
     debug:
       msg: 'Hello World'
-  - name: install numpy
-    pip:
-      name: numpy
+  - name: Ensure yamllint is installed
+    apt:
+      name: yamllint
+      state: present
 </pre>
 
 NOTE! If you cannot open the file in the editor. Use `nano playbook.yml`{{execute}} to create and open the file. Paste the content above. Save and exit by pressing `ctl-x` followed by `y` and `enter`.
