@@ -20,6 +20,7 @@ A playbooks lists plays which is a tasks that Ansible interprets. The playbook b
       name: cowsay
       state: present
 
+
 - __Hosts__ lets you state which group in the inventory that the play should apply to. In this case it is set to `all`, to affect all groups.
 - __Become__ lets you become another user, and `Become: yes` activates privilege escalation.
 - __Name__ is simply the text that is displayed when the playbook is executed, so that it is easy to follow the output.
