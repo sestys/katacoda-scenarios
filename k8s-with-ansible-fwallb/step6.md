@@ -1,14 +1,15 @@
-## Kubernetes
+## Kubernetes and their namespaces
 
-### Todo
-* intro to k8s
-* what is Namespace
-* create namespace with Kubectl
+Kubernetes, also called K8s because there are 8 letters between the first and last character, is an open-source tool for container orchestration. It can be used to automate deployment, scaling and management.
 
+Kubernetes supports virtual clusters, so called namespaces. When several teams share a cluster it can be problematic because of different user needs. Namespaces can be created to give each team their own virtual cluster, based on the same physical cluster, which can be used without affecting the other teams.
+
+Before creating a namespace, run the command `kubectl get namespaces`{{execute}} to get the initial status. There will be a default namespace that is part of any basic initialisation of Kubernetes.
+
+Lets create a namespace with
 `kubectl create namespace my-new-awesome-namespace`{{execute}}
 
-* create namespace with ansible
-
+Another way to create a namespace is with Ansible, which is done by adding commands as a play in a playbook. Below is a playbook that creates a new namespace.
 <pre class="file"
  data-filename="./k8s_playbook.yml"
   data-target="replace">
@@ -31,6 +32,6 @@
         state: present
 </pre>
 
-Run it `ansible-playbook -i hosts k8s_playbook.yml`{{execute}}
+Run the playbook with `ansible-playbook -i hosts k8s_playbook.yml`{{execute}}
 
-Check outcome `kubectl get namespaces`{{execute}}
+Check the outcome with `kubectl get namespaces`{{execute}}. Now there are several namespaces!
