@@ -4,6 +4,6 @@ Ansible is a tool for automating parts of the DevOps process. It does so by inte
 
 It can be used to automate tasks on the K8s cluster.
 
-Ansible is already included in the backend, and that can be verified using `ansible --version`{{execute}}. The version installed should be displayed.
+Ansible is already included in our environment, and that can be verified using `ansible --version`{{execute}}. The version installed should be displayed.
 
-Incase Ansible is not installed, `apt install Ansible`{{execute}} can be runned.
+In case Ansible is not installed, `apt install ansible`{{execute}} can be runned.

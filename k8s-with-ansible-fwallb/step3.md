@@ -15,7 +15,7 @@ Let us set up a hosts file matching the K8s cluster. The cluster used in the tut
 
 First, get the ip-address of the K8s cluster by running `kubectl cluster-info`{{execute}}. Then configure the hosts file to include this ip-address. Create the hosts file and add the group _master_ by running `echo "[master]" > hosts`{{execute}}.
 
-The hosts file is now created and can be found beside the editor. Now add the cluster's ip-address to the _master_ group by opening the hosts file above and, add the ip-address for the cluster that you got by the `kubectl cluster-info` command.
+The hosts file is now created and can be found beside the editor. Now add the cluster's ip-address to the _master_ group by opening the hosts file above and, add the ip-address for the cluster that you got by the `kubectl cluster-info`{{execute}} command.
 
 NOTE! If you can't find the file, you can edit it using `nano playbook.yml`{{execute}}, which will open the file, To close and save use `ctl-x`{{execute}} followed by `y`{{execute}} and `enter`{{execute}}.
 
