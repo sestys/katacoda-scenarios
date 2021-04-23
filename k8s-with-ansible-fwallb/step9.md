@@ -7,9 +7,10 @@
     vars:
       ansible_python_interpreter: '{{ ansible_playbook_python }}'
     tasks:
-      - name: Check that openshift is installed, if not, install it
+      - name: Ensure k8s module dependencies are installed.
         pip:
-          name: openshift==0.4.3
+          name: openshift==0.4.3 docker-py>=1.7.0
+          state: present
 
       - name: Create K8s namespace
         k8s_raw:
@@ -17,10 +18,6 @@
           api_version: v1
           kind: Namespace
           state: present
-
-      - name: Check that docker is installed
-        pip:
-          name: docker-py>=1.7.0
 
       - name: apply kubernetes deployment
         shell: "kubectl apply -f {{ item }}"
