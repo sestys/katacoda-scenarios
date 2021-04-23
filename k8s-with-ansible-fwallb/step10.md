@@ -1,6 +1,6 @@
 ### Lets finish with a fun easter egg
 
-<iframe src="https://giphy.com/embed/JoqezKViyMjkahOzD8" width="200" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/JoqezKViyMjkahOzD8" width="200" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 Create a playbook `touch easter_playbook.yml` and add the content bellow by opening the file in the editor.
 
