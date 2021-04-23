@@ -10,6 +10,7 @@ Create a playbook `touch easter_playbook.yml`{{execute}} and add the content bel
     ---
     - hosts: all
       become: yes
+      tasks:
       - name: Say moo
         pip:
           name: cowsay
@@ -25,6 +26,7 @@ Now update the playbook to also install matplotlib:
     ---
     - hosts: all
       become: yes
+      tasks:
       - name: Say moo
         pip:
           name: cowsay
