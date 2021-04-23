@@ -6,7 +6,7 @@ A playbooks lists plays which is a task that Ansible interprets. The playbook be
 - __Become__ lets you become another user, and `Become: yes` activates privilege escalation.
 - __Name__ is simply the text that is displayed when the playbook is executed, so that it is easy to follow the output.
 - __Debug__ is a command that lets you output parts from the cluster. This could be a date, a simple string or other data. The date could for example be out of synk, so scheduled tasks are not executed. Printing the date would find this problem.
-- __Pip__ is simply Python's package installer.
+- __Pip__ is simply Python's package installer, it corresponds to running `pip install numpy`.
 
 <pre class="file"
  data-filename="./playbook.yml"
