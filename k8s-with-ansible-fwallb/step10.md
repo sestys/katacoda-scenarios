@@ -9,10 +9,10 @@ Create a playbook `touch easter_playbook.yml`{{execute}} and add the content bel
   data-target="replace">
     ---
     - hosts: all
-    become: yes
-    - name: Say moo
-      pip:
-        name: cowsay
+      become: yes
+      - name: Say moo
+        pip:
+          name: cowsay
 </pre>
 
 Execute the playbook `ansible-playbook -i hosts easter_playbook.yml`{{execute}}. This will install cowsay.
@@ -24,13 +24,13 @@ Now update the playbook to also install matplotlib:
   data-target="add">
     ---
     - hosts: all
-    become: yes
-    - name: Say moo
-      pip:
-        name: cowsay
-    - name: install matplotlib
-      pip:
-        name: matplotlib
+      become: yes
+      - name: Say moo
+        pip:
+          name: cowsay
+      - name: install matplotlib
+        pip:
+          name: matplotlib
 </pre>
 
 Execute the playbook again `ansible-playbook -i hosts easter_playbook.yml`{{execute}}. Cows now announce each play.
