@@ -53,13 +53,6 @@
       "text": "finish.md"
     }
   },
-  "details": {
-    "assets": {
-        "host01": [
-            {"file": "main.yml", "target": "/usr/local/bin/", "chmod": "+x"}
-        ]
-    }
-},
   "environment": {
     "hideHiddenFiles": true,
     "uilayout": "editor-terminal"
