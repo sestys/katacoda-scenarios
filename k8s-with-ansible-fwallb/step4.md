@@ -8,20 +8,16 @@ A playbooks lists plays which is a task that Ansible interprets. The playbook be
 - __Debug__ is a command that lets you output parts from the cluster. This could be a date, a simple string or other data. The date could for example be out of sync, so scheduled tasks are not executed. Printing the date would find this problem.
 - __Pip__ is simply Python's package installer, it corresponds to running `pip install numpy`.
 
-<pre class="file"
- data-filename="./playbook.yml"
-  data-target="replace">
----
-- hosts: all
-  become: yes
-  tasks:
-  - name: Say hello
-    debug:
-      msg: 'Hello World'
-  - name: install numpy
-    pip:
-      name: numpy
-</pre>
+      ---
+      - hosts: all
+        become: yes
+        tasks:
+        - name: Say hello
+          debug:
+            msg: 'Hello World'
+        - name: install numpy
+          pip:
+            name: numpy
 
 
 Now let create a playbook in the next step!
