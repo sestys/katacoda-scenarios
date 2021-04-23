@@ -5,7 +5,7 @@
 * what is Namespace
 * create namespace with Kubectl
 
-`kubectl create namespace my-new-awesome-namespace`
+`kubectl create namespace my-new-awesome-namespace`{{execute}}
 
 * create namespace with ansible
 
