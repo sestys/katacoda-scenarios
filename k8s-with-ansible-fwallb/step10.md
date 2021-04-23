@@ -17,11 +17,17 @@ Create a playbook `touch easter_playbook.yml`{{execute}} and add the content bel
 
 Execute the playbook `ansible-playbook -i hosts easter_playbook.yml`{{execute}}. This will install cowsay.
 
-Now add the following to the playbook:
+Now update the playbook to also install matplotlib:
 
 <pre class="file"
  data-filename="./easter_playbook.yml"
   data-target="add">
+    ---
+    - hosts: all
+    become: yes
+    - name: Say moo
+      pip:
+        name: cowsay
     - name: install matplotlib
       pip:
         name: matplotlib
