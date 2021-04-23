@@ -37,4 +37,4 @@ Now update the playbook to also install matplotlib:
 
 Execute the playbook again `ansible-playbook -i hosts easter_playbook.yml`{{execute}}. Cows now announce each play.
 
-<iframe src="https://giphy.com/embed/3ohs4dsfwr3J53qrS0" width="200" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/3ohs4dsfwr3J53qrS0" width="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
