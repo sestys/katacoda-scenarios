@@ -18,9 +18,10 @@
   vars:
     ansible_python_interpreter: '{{ ansible_playbook_python }}'
   tasks:
-    - name: Check that openshift is installed, if not, install it
+    - name: Ensure k8s module dependencies are installed.
       pip:
         name: openshift==0.4.3
+        state: present
 
     - name: Create K8s namespace
       k8s_raw:
