@@ -10,7 +10,7 @@
 * create namespace with ansible
 
 <pre class="file"
- data-filename="./k8s_playbook.yml"
+ data-filename="./playbook.yml"
   data-target="replace">
 ---
 - hosts: all
@@ -31,6 +31,6 @@
         state: present
 </pre>
 
-Run it `ansible-playbook -i hosts k8s_playbook.yml`{{execute}}
+Run it `ansible-playbook -i hosts playbook.yml`{{execute}}
 
 Check outcome `kubectl get namespaces`{{execute}}

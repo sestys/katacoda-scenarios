@@ -1,5 +1,5 @@
 <pre class="file"
- data-filename="./k8s_playbook.yml"
+ data-filename="./playbook.yml"
   data-target="replace">
 ---
 - hosts: all
