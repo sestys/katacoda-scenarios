@@ -24,4 +24,4 @@ To verify that the file is configured correctly, run `cat hosts`{{execute}} to s
     [master]
     the ip-address that you got
 
-Now ping the server to verify connection to the cluster `ansible all -i hosts -m ping`{{execute}} - this should display SUCCESS!
+Now ping the server to verify connection to the cluster `ansible all -i hosts -m ping`{{execute}} - this should display SUCCESS! NOTE! There is no problem if *The authenticity of the host can not be established*, just write `yes` followed by `enter`. 
