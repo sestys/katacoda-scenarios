@@ -53,6 +53,10 @@
       "text": "finish.md"
     }
   },
+  "files": [
+	   "k8s_playbook.yml",
+     "hosts"
+  ],
   "environment": {
     "hideHiddenFiles": true,
     "uilayout": "editor-terminal"

@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    ansible_python_interpreter: '{{ ansible_playbook_python }}'
+  tasks:
+    - name: install openshift
+      pip:
+        name: openshift==0.4.3
+
+    - name: create namespace
+      k8s_raw:
+        name: testansible
+        api_version: v1
+        kind: Namespace
+        state: present

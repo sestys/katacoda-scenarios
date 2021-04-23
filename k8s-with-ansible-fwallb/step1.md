@@ -1,6 +1,6 @@
 ## Initialize a Kubernetes (K8s) cluster
 
-A K8s cluster is included in the backend and needs to be initialized. Run `minikube start`{{execute}} to start the cluster and wait till the K8s cluster is up and running. This could take a while! Take a break and grab a coffee.
+A K8s cluster is included in the backend and needs to be initialized. Run `minikube start --wait=false`{{execute}} to start the cluster and wait till the K8s cluster is up and running. This could take a while! Take a break and grab a coffee.
 
 <iframe src="https://giphy.com/embed/RMhbmeqWeOBQIiQkS4" width="200"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
