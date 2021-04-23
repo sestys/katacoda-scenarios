@@ -51,8 +51,14 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{"file": "k8s_playbook.yml", "target":"~/"}]
     }
   },
+  "files": [
+	   "k8s_playbook.yml"
+  ],
   "environment": {
     "hideHiddenFiles": true,
     "uilayout": "editor-terminal"
