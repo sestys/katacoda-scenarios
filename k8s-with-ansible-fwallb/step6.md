@@ -11,7 +11,7 @@ Lets create a namespace with
 
 Another way to create a namespace is with Ansible, which is done by adding commands as a play in a playbook. Below is a playbook that creates a new namespace.
 <pre class="file"
- data-filename="./k8s_playbook.yml"
+ data-filename="./playbook.yml"
   data-target="replace">
 ---
 - hosts: all
@@ -32,6 +32,6 @@ Another way to create a namespace is with Ansible, which is done by adding comma
         state: present
 </pre>
 
-Run the playbook with `ansible-playbook -i hosts k8s_playbook.yml`{{execute}}
+Run the playbook with `ansible-playbook -i hosts playbook.yml`{{execute}}
 
 Check the outcome with `kubectl get namespaces`{{execute}}. Now there are several namespaces!
