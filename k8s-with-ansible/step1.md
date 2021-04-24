@@ -1,7 +1,7 @@
 
 A K8s cluster is included in our environment, we just need to initialize it. For this tutorial, we will use _Minikube_, a tool for local development for K8s, that runs a single-node K8s cluster. It provides the same interface as full K8s cluster.
 
-First, please wait for the environment to be ready. This could take a while (~1-2 minute)! Take a break and grab a coffee.
+First, please wait for the environment to be ready. This could take a while! Take a break and grab a coffee.
 
 <p align="center"><iframe src="https://giphy.com/embed/RMhbmeqWeOBQIiQkS4" width="200"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
 
