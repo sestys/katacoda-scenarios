@@ -1,10 +1,10 @@
 
 Containers are Linux systems, almost impossibly minimal in scope, that can be managed by Kubernetes. Now you will pull a docker image with a few lines of code with Ansible.
 
-The image is NginX, a web server used as load balancer, mail and reverse proxy, and HTTP cache. It is one of the most widely used webserver and the docker image has over 1 billions pulls.
+The image is NginX, a web server used as load balancer, mail and reverse proxy, and HTTP cache. It is one of the most widely used webservers and the docker image has over 1 billion pulls.
 
 
-Change the _playbook.yml_ with the following code:
+Change the _playbook.yml_ to the following:
 <pre class="file"
  data-filename="./playbook.yml"
   data-target="replace">

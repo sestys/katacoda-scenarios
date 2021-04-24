@@ -17,4 +17,4 @@ Create a playbook.yml file by running `touch playbook.yml`{{execute}}. Open the 
       state: present
 </pre>
 
-Now the playbook can be executed by running the following command `ansible-playbook -i hosts playbook.yml`{{execute}}. The output should include a message, ok=3 and changed=1. The second time it is run yamllint is already installed, and therefore we get no change and only ok=3. This is one of great Ansible features - you can use the same notebook to both configuring the environment, and checking if everything is as it should be.
+Now the playbook can be executed by running the following command `ansible-playbook -i hosts playbook.yml`{{execute}}. The output should include a message, ok=3 and changed=1. The second time it is run yamllint is already installed, and therefore we get no change and only ok=3. This is one of Ansible's great features - you can use the same notebook to both configure the environment, and to check that everything is as it should be.

@@ -1,11 +1,11 @@
 You're not limited to small maintenance tasks with Ansible.
 Any task you are able to do from a shell you can easily do in playbooks as well.
 
-In the previous step, we showed you how to pull a docker image. Now the only thing left is to deploy the image. In the _deployment_ folder are two typical deployment configuration files, check them out if you are interested.
+In the previous step, you learned how to pull a docker image. Now the only thing left is to deploy the image. In the _deployment_ folder are two typical deployment configuration files, check them out if you are interested.
 
-To make the deployment possible, add the last task to our playbook.yml file. All it does is to apply the deployment file to k8s. Interesting is how easily you can loop over multiple files with Ansible. The __with_items__ specifies values you want to loop, and the __{{ item }}__ then substituted them into the function call. In this way, you can easily run the same command multiple types. Using outputs from previous tasks is done similarly.
+To make the deployment possible, add the last task to the playbook.yml file. All it does is to apply the deployment file to k8s. Interesting is how easily you can loop over multiple files with Ansible. The __with_items__ specifies values you want to loop over, and the __{{ item }}__ then substitutes them into the function call. In this way, you can easily run the same command multiple times. Using outputs from previous tasks is done in a similar way.
 
-Now, for the last time, change the _playbook.yml_ to look as
+Now, for the last time, change the _playbook.yml_ to:
 <pre class="file"
  data-filename="./playbook.yml"
   data-target="replace">
@@ -36,7 +36,6 @@ Now, for the last time, change the _playbook.yml_ to look as
       with_items:
         - hello-k8s-deployment.yml
         - nginx-deployment.yml
-
 </pre>
 
 and then run it `ansible-playbook -i hosts playbook.yml`{{execute}}.

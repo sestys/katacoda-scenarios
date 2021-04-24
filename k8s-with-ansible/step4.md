@@ -1,5 +1,5 @@
 
-A playbooks lists plays which is a tasks that Ansible interprets. The playbook below has one play, which is started by `tasks:`. It simply prints a message saying "Hello World", installs _yamllint_ tool (is is used to check if your YAML file is correctly formatted), and installs a Python package with pip.
+A playbook lists plays which are tasks that Ansible interprets. The playbook below has one play, which is started by the command `tasks:`. It simply prints a message saying "Hello World", installs _yamllint_ (a tool used to check if your YAML file is correctly formatted), and lastly installs a Python package with pip.
 
 <pre class="file"
  data-filename="./playbook.yml"
