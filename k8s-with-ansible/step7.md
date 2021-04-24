@@ -14,7 +14,7 @@ Change the _playbook.yml_ with the following code:
   vars:
     ansible_python_interpreter: '{{ ansible_playbook_python }}'
   tasks:
-    - name: Ensure k8s and docker modules' dependencies are installed.
+    - name: Ensure k8s and docker modules dependencies are installed.
       pip:
         name: openshift==0.4.3 docker-py>=1.7.0
         state: present
