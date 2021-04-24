@@ -27,7 +27,7 @@ Change the _playbook.yml_ with the following code:
         state: present
 
 
-    - name: Pull an nginx docker image
+    - name: Pull a nginx docker image
       docker_image:
         name: nginx:1.20-alpine
         state: present

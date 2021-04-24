@@ -19,7 +19,7 @@
         kind: Namespace
         state: present
 
-    - name: Pull a nginx image
+    - name: Pull a nginx docker image
       docker_image:
         name: nginx:1.20-alpine
 
