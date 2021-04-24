@@ -1,6 +1,5 @@
-## Kubernetes and their namespaces
 
-Kubernetes, also called K8s because there are 8 letters between the first and last character, is an open-source tool for container orchestration. It can be used to automate deployment, scaling and management.
+Kubernetes, also called K8s (because there are 8 letters between the first and last character), is an open-source tool for container orchestration. It can be used to automate deployment, scaling and management.
 
 Kubernetes supports virtual clusters, so called namespaces. When several teams share a cluster it can be problematic because of different user needs. Namespaces can be created to give each team their own virtual cluster, based on the same physical cluster, which can be used without affecting the other teams.
 

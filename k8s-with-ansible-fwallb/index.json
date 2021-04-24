@@ -6,44 +6,40 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Initialize a Kubernetes (K8s) cluster",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Ansible",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Set up inventory file",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Introduction to Ansible playbooks",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Create a simple Ansible playbook",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Kubernetes and their namespaces",
         "text": "step6.md"
       },
       {
-        "title": "Step 7",
+        "title": "Pull a Docker image",
         "text": "step7.md"
       },
       {
-        "title": "Step 8",
+        "title": "Deploying to K8s",
         "text": "step8.md"
       },
       {
-        "title": "Step 9",
+        "title": "Wrap-up",
         "text": "step9.md"
-      },
-      {
-        "title": "Step 10",
-        "text": "step10.md"
       }
     ],
     "intro": {

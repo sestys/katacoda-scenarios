@@ -1,4 +1,3 @@
-## Initialize a Kubernetes (K8s) cluster
 
 A K8s cluster is included in our environment, we just need to initialize it. For this tutorial, we will use _Minikube_, a tool for local development for K8s, that runs a single-node K8s cluster. It provides the same interface as full K8s cluster.
 

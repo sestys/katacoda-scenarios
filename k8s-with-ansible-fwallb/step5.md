@@ -1,4 +1,3 @@
-## Create a simple Ansible playbook
 
 Create a playbook.yml file by running `touch playbook.yml`{{execute}}. Open the file in the editor and add the following:
 

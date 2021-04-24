@@ -1,4 +1,3 @@
-## Set up inventory file
 
 Create a hosts file that will give Ansible information about the Kubernetes cluster.
 
