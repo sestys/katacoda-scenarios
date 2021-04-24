@@ -51,8 +51,8 @@
     },
     "assets": {
       "host01": [{"file": ".init.sh", "target": "~/", "chmod": "+x"},
-      {"file": "hello-k8s-deployment.yml", "target": "~/"},
-      {"file": "nginx-deployment.yml", "target": "~/"}]
+      {"file": "hello-k8s-deployment.yml", "target": "~/deployment/"},
+      {"file": "nginx-deployment.yml", "target": "~/deployment/"}]
     }
   },
   "environment": {
