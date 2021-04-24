@@ -1,5 +1,5 @@
 {
-  "title": "Configurating K8s with Ansible",
+  "title": "Configurating Kubernetes with Ansible",
   "description": "Learn how to configure your Kubernetes with Ansible.",
   "difficulty": "Beginner",
   "time": "15 minutes",
