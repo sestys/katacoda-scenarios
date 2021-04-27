@@ -1,6 +1,6 @@
 # Configure Ansible with Kubernetes
 
-Automation is one of the core principles in DevOps. In one of the two parts that form DevOps, operations, continuous deployment (CD) is the core principle. In this part of the DevOps process, it is the deployment that is automated. A CD pipeline introduces a series of steps performed to deploy a new version of the software.
+Automation is one of the core principles in DevOps. Operations is one of the two parts that form DevOps, and its core principle is continuous deployment. In this part of the DevOps process, it is the deployment that is automated. A CD pipeline introduces a series of steps performed to deploy a new version of the software.
 
 This tutorial introduces two open-source tools used for automating routine tasks and container orchestration.
 
