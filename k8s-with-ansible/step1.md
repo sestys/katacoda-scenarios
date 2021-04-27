@@ -9,7 +9,7 @@ First, please wait for the environment to be ready. This could take a while! Tak
 If the environment is ready and you see the shell prompt ($), run `minikube start --wait=false`{{execute}} to start the cluster and wait till the K8s cluster is up and running.
 This could also take a while (around another 1-2 minutes), so just chill for a bit and enjoy the day.
 
-> If it crashes with the _fatal error: runtime: out of memory_, just rerun it, it should work next time.
+> If it crashes with the _fatal error: runtime: out of memory_ or with _output killed_, just rerun it, it should work next time.
 
 <p align="center"><iframe src="https://giphy.com/embed/hGTtqRheOj7KU" width="200"  frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
 
