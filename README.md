@@ -15,7 +15,7 @@ The tutorial gives an introduction to Ansible and Kubernetes (K8s), and how they
 - Step 4: intoduction to Ansible playbooks,
 - Step 5: set up a simple playbook,
 - Step 6: K8s and namespaces,
-- Step 7: ...
-- Step 8: ...
+- Step 7: pull a Docker image,
+- Step 8: deploy the Docker image to K8s using Ansible,
 - Step 9: did you find the _Easter egg_?
 - Conclusion:
