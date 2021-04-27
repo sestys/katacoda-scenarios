@@ -1,5 +1,5 @@
 
-Create a playbook.yml file by running `touch playbook.yml`{{execute}}. Open the file in the editor and add the following:
+Create a playbook.yml file by running `touch playbook.yml`{{execute}}. Open the file in the editor. If you cannot find the file, try to refresh the file tree. When the file is open, add the following:
 
 <pre class="file"
  data-filename="./playbook.yml"
